@@ -1,0 +1,7 @@
+{
+  "evolvingItem": "minecraft:air",
+  "gainEP": 0.02,
+  "item": "irons_spellbooks:shadowwalker_helmet",
+  "maxEP": 800000,
+  "minEP": 5000
+}

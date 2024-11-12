@@ -1,0 +1,7 @@
+{
+  "evolvingItem": "minecraft:air",
+  "gainEP": 0.015,
+  "item": "irons_spellbooks:artificer_cane",
+  "maxEP": 1000000,
+  "minEP": 3000
+}

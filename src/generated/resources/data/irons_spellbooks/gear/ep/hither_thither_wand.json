@@ -1,0 +1,7 @@
+{
+  "evolvingItem": "minecraft:air",
+  "gainEP": 0.03,
+  "item": "irons_spellbooks:hither_thither_wand",
+  "maxEP": 1000000,
+  "minEP": 210000
+}

@@ -1,17 +1,20 @@
 package com.github.manasmods.tensura_iron_spell.handler;
 
 import com.github.manasmods.tensura.ability.SkillHelper;
+import com.github.manasmods.tensura.event.EnergyRegenerateTickEvent;
 import com.github.manasmods.tensura_iron_spell.TensuraIronSpell;
 import com.github.manasmods.tensura_iron_spell.TensuraIronSpellConfig;
 import com.github.manasmods.tensura_iron_spell.data.IronSpellTags;
 import io.redspace.ironsspellbooks.api.events.SpellDamageEvent;
 import io.redspace.ironsspellbooks.api.events.SpellOnCastEvent;
+import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = TensuraIronSpell.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-public class SpellHandler {
+public class ServerEventsHandler {
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void onSpellCast(final SpellOnCastEvent event) {
         double cost = event.getManaCost();
@@ -32,5 +35,12 @@ public class SpellHandler {
         double boost = TensuraIronSpellConfig.INSTANCE.spellDamageMultiplier.get();
         if (boost <= 0 || boost == 1) return;
         event.setAmount((float) (event.getAmount() * boost));
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public static void onMagiculeRegen(final EnergyRegenerateTickEvent.Magicule event) {
+        AttributeInstance instance = event.getEntity().getAttribute(AttributeRegistry.MANA_REGEN.get());
+        if (instance == null || instance.getValue() == 1) return;
+        event.setValue(event.getValue() * instance.getValue());
     }
 }

@@ -19,12 +19,12 @@ public class TensuraIronSpellConfig {
     private TensuraIronSpellConfig(ForgeConfigSpec.Builder builder) {
         builder.push("manaConversionMultiplier");
         this.manaConversionMultiplier = builder.comment("The multiplier for how much Mana costed to cast spells would be converted to Magicule cost in Tensura")
-                .defineInRange("manaConversionMultiplier", 10, 0D, 1_000_000_000D);
+                .defineInRange("manaConversionMultiplier", 20, 0D, 1_000_000_000D);
         builder.pop();
 
         builder.push("spellDamageMultiplier");
         this.spellDamageMultiplier = builder.comment("The multiplier for how much spell damage would be boosted to fit with Tensura:Reincarnated")
-                .defineInRange("spellDamageBoostMultiplier", 5, 0D, 1_000_000_000D);
+                .defineInRange("spellDamageBoostMultiplier", 3, 0D, 1_000_000_000D);
         builder.pop();
     }
 }

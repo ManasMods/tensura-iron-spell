@@ -1,0 +1,7 @@
+{
+  "evolvingItem": "minecraft:air",
+  "gainEP": 0.03,
+  "item": "irons_spellbooks:amethyst_rapier",
+  "maxEP": 250000,
+  "minEP": 15000
+}

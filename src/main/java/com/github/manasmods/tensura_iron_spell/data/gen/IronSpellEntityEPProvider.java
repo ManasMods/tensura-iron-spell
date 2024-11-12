@@ -30,7 +30,10 @@ public class IronSpellEntityEPProvider extends CustomDataProvider {
         List<ResourceLocation> apothecaristList = new ArrayList<>();
         apothecaristList.add(ResistanceSkills.POISON_RESISTANCE.getId());
         EntityEPCount.of(EntityType.getKey(EntityRegistry.APOTHECARIST.get()), 10000, 12000, apothecaristList).buildJson(biConsumer);
-        EntityEPCount.of(EntityType.getKey(EntityRegistry.ARCHEVOKER.get()), 10000, 12000).buildJson(biConsumer);
+
+        List<ResourceLocation> archevokerList = new ArrayList<>();
+        archevokerList.add(ExtraSkills.SAGE.getId());
+        EntityEPCount.of(EntityType.getKey(EntityRegistry.ARCHEVOKER.get()), 10000, 12000, archevokerList).buildJson(biConsumer);
         EntityEPCount.of(EntityType.getKey(EntityRegistry.CATACOMBS_ZOMBIE.get()), 1500, 3000).buildJson(biConsumer);
 
         List<ResourceLocation> keeperList = new ArrayList<>();
