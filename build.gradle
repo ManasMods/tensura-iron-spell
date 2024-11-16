@@ -256,13 +256,13 @@ def replaceResources = tasks.register("replaceResources", Copy) {
         def forgeLoaderVersion = forgeVersion.substring(0, forgeVersion.indexOf('.'))
         def nextMajorMinecraftVersion = getNextMajorMinecraftVersion(minecraftVersion)
         def minecraftVersionCheck = "[${minecraftVersion},${nextMajorMinecraftVersion})"
-        def manasVersionCheck = "[${manasCoreVersion},)"
+        def ironVersionCheck = "[${ironsSpellsVersion},)"
 
         include "META-INF/mods.toml"
         expand 'modVersion': "${modVersion}",
                 'forgeLoaderVersion': "[${forgeLoaderVersion},)",
                 'minecraftVersionCheck': "${minecraftVersionCheck}",
-                'manasVersionCheck': "${manasVersionCheck}"
+                'ironVersionCheck': "${ironVersionCheck}"
     }
     it.into "$buildDir/resources/main/"
 }
