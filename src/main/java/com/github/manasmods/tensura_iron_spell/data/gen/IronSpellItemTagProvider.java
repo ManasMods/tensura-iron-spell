@@ -30,5 +30,11 @@ public class IronSpellItemTagProvider extends ItemTagProvider {
                 ItemRegistry.ENERGIZED_CORE.get());
         tag(TensuraTags.Items.DUBIOUS_RAW_INGREDIENT).add(ItemRegistry.DRAGONSKIN.get(),
                 ItemRegistry.HOGSKIN.get(), ItemRegistry.BLOOD_VIAL.get());
+
+        tag(TensuraTags.Items.NO_DECRAFT).add(ItemRegistry.BLANK_RUNE.get(), ItemRegistry.BLOOD_RUNE.get(),
+                ItemRegistry.FIRE_RUNE.get(), ItemRegistry.ICE_RUNE.get(), ItemRegistry.LIGHTNING_RUNE.get(),
+                ItemRegistry.ENDER_RUNE.get(), ItemRegistry.HOLY_RUNE.get(), ItemRegistry.EVOCATION_RUNE.get(),
+                ItemRegistry.MANA_RUNE.get(), ItemRegistry.COOLDOWN_RUNE.get(), ItemRegistry.PROTECTION_RUNE.get(),
+                ItemRegistry.NATURE_RUNE.get());
     }
 }

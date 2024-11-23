@@ -198,8 +198,8 @@ dependencies {
     //Iron Spell
     implementation fileTree("lib")
     implementation fg.deobf("io.redspace.ironsspellbooks:irons_spellbooks:${ironsSpellsVersion}")
+    implementation fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
     runtimeOnly fg.deobf("software.bernie.geckolib:geckolib-forge-${geckolib_version}")
-    runtimeOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
     runtimeOnly fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
     implementation "com.google.code.gson:gson:${gson_version}"
