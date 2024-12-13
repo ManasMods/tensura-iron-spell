@@ -1,11 +1,9 @@
-// 1.19.2	2024-11-12T22:27:06.3472379	Iron Spell Gear EP
+// 1.19.2	2024-12-13T14:54:21.222353	Iron Spell Gear EP
 8026148d6d56f74cbd3a2ca71cffdff4c68f70d6 data/irons_spellbooks/gear/ep/amethyst_rapier.json
 2bc8593fdf486e32f803b14f10570736d7d4c17b data/irons_spellbooks/gear/ep/archevoker_boots.json
 021f5b49be0a75df688cc99847e194401a19297b data/irons_spellbooks/gear/ep/archevoker_chestplate.json
 414d30f44696159e864e7eab6dd995a7553a9798 data/irons_spellbooks/gear/ep/archevoker_helmet.json
 d2688786df6d8e010ff05798cf6287b8861c2ef4 data/irons_spellbooks/gear/ep/archevoker_leggings.json
-151a6eb684b696e9953734173ab844aa70ecdaab data/irons_spellbooks/gear/ep/artificer_cane.json
-f2124250300588ba8f31353a77c5a44f1277e32e data/irons_spellbooks/gear/ep/blood_staff.json
 5c1fd889920a1b435b7b22c0b54d5230f5df89c5 data/irons_spellbooks/gear/ep/cryomancer_boots.json
 966e7bf23dabdb67accd3e592fa2a01c65d1e23f data/irons_spellbooks/gear/ep/cryomancer_chestplate.json
 1536b89cb84295ae54ea17e747ac165da75e7f59 data/irons_spellbooks/gear/ep/cryomancer_helmet.json
@@ -18,11 +16,7 @@ b15251a996901cc1f747e6a29ccf50de7625a7d0 data/irons_spellbooks/gear/ep/electroma
 190a117c040fffd4f359f96a3cebeaa2eb1b1c2b data/irons_spellbooks/gear/ep/electromancer_chestplate.json
 390fae92f23ac7ffdfce2d1333b59df692db15b4 data/irons_spellbooks/gear/ep/electromancer_helmet.json
 7b1817258fc2fd01c7a9004bd163a7dde538d827 data/irons_spellbooks/gear/ep/electromancer_leggings.json
-ba324b7c69bbb83f91f2841f4fd5c016070b06c9 data/irons_spellbooks/gear/ep/graybeard_staff.json
-70c18de3d833ded26443984207d7ccea4da74904 data/irons_spellbooks/gear/ep/hither_thither_wand.json
-6446653e8e828f73fc592f1dfff435c162535426 data/irons_spellbooks/gear/ep/ice_staff.json
 c8835baaca4c09bdf0f1f77586de168a85c29255 data/irons_spellbooks/gear/ep/keeper_flamberge.json
-0a1d428ef8bdba593111dfc122a6c16f0e8d6427 data/irons_spellbooks/gear/ep/lightning_rod.json
 5c66826644c97c724c5ab4fa60d170e5fddd19b7 data/irons_spellbooks/gear/ep/magehunter.json
 b4fb55af6e8e5e53e71787f50d692b55109b7c0f data/irons_spellbooks/gear/ep/netherite_mage_boots.json
 96d7384d43116260a33cc1c4ebbeb25399a24ba3 data/irons_spellbooks/gear/ep/netherite_mage_chestplate.json

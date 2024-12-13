@@ -22,14 +22,6 @@ public class IronSpellGearEpProvider extends CustomDataProvider {
 
     protected void run(BiConsumer<ResourceLocation, Supplier<JsonElement>> biConsumer) {
         GearEPCount.of(ItemRegistry.TARNISHED_CROWN.getId(), 20000, 1000000, 0.03).buildJson(biConsumer);
-        GearEPCount.of(ItemRegistry.BLOOD_STAFF.getId(), 20000, 1000000, 0.03).buildJson(biConsumer);
-        GearEPCount.of(ItemRegistry.HITHER_THITHER_WAND.getId(), 210000, 1000000, 0.03).buildJson(biConsumer);
-
-        GearEPCount.of(ItemRegistry.GRAYBEARD_STAFF.getId(), 1000, 1000000, 0.01).buildJson(biConsumer);
-        GearEPCount.of(ItemRegistry.ARTIFICER_STAFF.getId(), 3000, 1000000, 0.015).buildJson(biConsumer);
-        GearEPCount.of(ItemRegistry.ICE_STAFF.getId(), 5000, 1000000, 0.02).buildJson(biConsumer);
-        GearEPCount.of(ItemRegistry.LIGHTNING_ROD_STAFF.getId(), 5000, 1000000, 0.02).buildJson(biConsumer);
-
         GearEPCount.of(ItemRegistry.MAGEHUNTER.getId(), 6000, 250000, 0.02).buildJson(biConsumer);
         GearEPCount.of(ItemRegistry.SPELLBREAKER.getId(), 15000, 250000, 0.03).buildJson(biConsumer);
         GearEPCount.of(ItemRegistry.KEEPER_FLAMBERGE.getId(), 15000, 250000, 0.03).buildJson(biConsumer);

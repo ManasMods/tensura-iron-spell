@@ -1,5 +1,6 @@
-// 1.19.2	2024-11-04T10:59:27.408321	Tags for minecraft:item
+// 1.19.2	2024-12-13T14:54:21.2302676	Tags for minecraft:item
 5a23caf8a8e4eb2846fe2bbfeb8eb81aade9fbff data/forge/tags/items/foods/dubious_ingredient_2.json
 b1f2ca6daa19bfecc86b0d107cf7633a2f2497c6 data/forge/tags/items/foods/dubious_ingredient_3.json
 7e90c72b9e7e959164f1c79cbfd9cf46a6fcddc5 data/forge/tags/items/foods/dubious_ingredient_4.json
 52459968c257dae05e8e3b3eee34414fed68ae9e data/forge/tags/items/foods/dubious_ingredient_5.json
+2093aa4922328222ea312418fd24c6a69722e643 data/forge/tags/items/skill/no_decraft.json
