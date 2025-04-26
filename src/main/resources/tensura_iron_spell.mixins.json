@@ -13,6 +13,7 @@
     "MixinColdResistance",
     "MixinManaBarOverlay",
     "MixinMixinHooks",
+    "MixinPortalEntity",
     "MixinTensuraDamageSourceHelper",
     "MixinThermalFluctationNullification",
     "MixinThermalFluctationResistance"
