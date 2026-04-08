@@ -1,5 +1,14 @@
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
+
+    runs {
+        data {
+            data()
+            programArgs "--all", "--mod", "tensura_iron_spells"
+            programArgs "--output", project(':common').file('src/generated/resources').absolutePath
+            programArgs "--existing", project(':common').file('src/main/resources').absolutePath
+        }
+    }
 }
 
 dependencies {

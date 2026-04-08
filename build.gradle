@@ -44,10 +44,6 @@ subprojects {
             common rootProject.enabled_platforms.split(',')
         }
 
-        if (project.name.endsWith("fabric")) {
-            fabric()
-        }
-
         if (project.name.endsWith("neoforge")) {
             neoForge()
         }
@@ -57,7 +53,7 @@ subprojects {
         enableTransitiveAccessWideners = true
 
         runConfigs.each {
-            it.setIdeConfigGenerated(false)
+            it.runDir = "../run/$it.environment"
         }
 
         mixin {
@@ -77,10 +73,6 @@ subprojects {
             }
             compileClasspath.extendsFrom common
             runtimeClasspath.extendsFrom common
-
-            if (project.name.endsWith("fabric")) {
-                developmentFabric.extendsFrom common
-            }
 
             if (project.name.endsWith("neoforge")) {
                 developmentNeoForge.extendsFrom common
@@ -102,8 +94,51 @@ subprojects {
         }
 
         maven {
+            name = "Tensura"
+            url = 'https://nexus.nighti.dev/repository/manasmods/'
+            credentials {
+                username System.getenv().getOrDefault("MANAS_REPO_USER", nexusUsername)
+                password System.getenv().getOrDefault("MANAS_REPO_USER_PASSWORD", nexusPassword)
+            }
+        }
+
+        maven {
             name = "ManasCore"
             url = 'https://nexus.nighti.dev/repository/manasmods-public/'
+        }
+
+        maven {
+            name = 'GeckoLib'
+            url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        }
+
+        maven {
+            name = "SmartBrainLib (SBL) Maven Repo"
+            url = "https://dl.cloudsmith.io/public/tslat/sbl/maven/"
+        }
+
+        maven {
+            url = 'https://maven.minecraftforge.net/'
+        }
+
+        maven {
+            name = "Jared's maven"
+            url = "https://maven.blamejared.com/"
+        }
+
+        maven {
+            name = "ModMaven"
+            url = "https://modmaven.dev"
+        }
+
+        maven {
+            name = "Iron's Maven - Release"
+            url = "https://code.redspace.io/releases"
+        }
+
+        maven {
+            name = "Iron's Maven - Snapshots"
+            url = "https://code.redspace.io/snapshots"
         }
 
         exclusiveContent {
@@ -137,25 +172,15 @@ subprojects {
             modImplementation "io.github.manasmods:manascore-race-common:$rootProject.manasCoreVersion"
             modImplementation "io.github.manasmods:manascore-skill-common:$rootProject.manasCoreVersion"
             modImplementation "io.github.manasmods:manascore-storage-common:$rootProject.manasCoreVersion"
-        }
 
-        if (project.name.endsWith("fabric")) {
-            modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
-            modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
-            modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
+            modImplementation "io.github.manasmods.tensura:common:$rootProject.tensuraVersion"
+            modImplementation "software.bernie.geckolib:geckolib-common-$rootProject.minecraft_version:$rootProject.geckolib_version"
+            modImplementation "net.tslat.smartbrainlib:SmartBrainLib-common-$rootProject.minecraft_version:$rootProject.sbl_version"
+            modImplementation "com.github.glitchfiend:TerraBlender-common:$rootProject.minecraft_version-$rootProject.terrablender_version"
 
-            common(project(path: ':common', configuration: 'namedElements')) { transitive false }
-            shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
-
-            modImplementation "io.github.manasmods:manascore-attribute-fabric:$rootProject.manasCoreVersion"
-            modImplementation "io.github.manasmods:manascore-command-fabric:$rootProject.manasCoreVersion"
-            modImplementation "io.github.manasmods:manascore-config-fabric:$rootProject.manasCoreVersion"
-            modImplementation "io.github.manasmods:manascore-inventory-fabric:$rootProject.manasCoreVersion"
-            modImplementation "io.github.manasmods:manascore-keybind-fabric:$rootProject.manasCoreVersion"
-            modImplementation "io.github.manasmods:manascore-network-fabric:$rootProject.manasCoreVersion"
-            modImplementation "io.github.manasmods:manascore-race-fabric:$rootProject.manasCoreVersion"
-            modImplementation "io.github.manasmods:manascore-skill-fabric:$rootProject.manasCoreVersion"
-            modImplementation "io.github.manasmods:manascore-storage-fabric:$rootProject.manasCoreVersion"
+            modImplementation "io.redspace:irons_spellbooks:$rootProject.iron_version"
+            modCompileOnlyApi("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+            modCompileOnlyApi("mezz.jei:jei-${minecraft_version}-common:${jei_version}")
         }
 
         if (project.name.endsWith("neoforge")) {
@@ -174,6 +199,12 @@ subprojects {
             implementation "io.github.manasmods:manascore-race-neoforge:$rootProject.manasCoreVersion"
             implementation "io.github.manasmods:manascore-skill-neoforge:$rootProject.manasCoreVersion"
             implementation "io.github.manasmods:manascore-storage-neoforge:$rootProject.manasCoreVersion"
+
+            implementation "io.redspace:irons_spellbooks:$rootProject.iron_version"
+            implementation "io.github.manasmods.tensura:neoforge:$rootProject.tensuraVersion"
+            implementation "software.bernie.geckolib:geckolib-neoforge-$rootProject.minecraft_version:$rootProject.geckolib_version"
+            implementation "net.tslat.smartbrainlib:SmartBrainLib-neoforge-$rootProject.minecraft_version:$rootProject.sbl_version"
+            implementation "com.github.glitchfiend:TerraBlender-neoforge:$rootProject.minecraft_version-$rootProject.terrablender_version"
         }
     }
 
@@ -270,21 +301,6 @@ subprojects {
             if (project.name.endsWith("neoforge")) {
                 filesMatching('META-INF/neoforge.mods.toml') {
                     expand placeholders
-                }
-            } else if (project.name.endsWith("fabric")) {
-                filesMatching('fabric.mod.json') {
-                    expand placeholders
-
-                    if (true) {
-                        filter { String line ->
-                            if (line.contains('"mixins":')) {
-                                var modifiedLine = "  \"accessWidener\": \"${project.archives_name}.accesswidener\",\n" + line
-
-                                return modifiedLine
-                            }
-                            return line
-                        }
-                    }
                 }
             }
         }
