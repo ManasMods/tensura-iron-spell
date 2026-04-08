@@ -1,96 +1,16 @@
-# ManasMods Modding Template
-This is a simple template to create new Mods using ManasCore mods without the need to always setup gradle and stuff.
+# TenSura Compat: Iron's Spells & Spellbooks
 
-## Things you need to change
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b659e6afad474179a81579681ff34ccf)](https://www.codacy.com/gh/ManasMods/reincarnated_mod/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ManasMods/reincarnated_mod&amp;utm_campaign=Badge_Grade)
+[![DownloadCount](https://cf.way2muchnoise.eu/full_1140214_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/tensura-compat-irons-spells-n-spellbooks)
+[![Discord](https://img.shields.io/discord/831767201966456852.svg?color=7289DA&label=discord&logo=discord&logoColor=FFFFFF)](https://discord.com/invite/tensuramod)
 
-File: `gradle.properties`
+This Mod doesn't provide any new functionality for Minecraft itself. It requires TenSura: Reincarnated and Iron's Spells & Spellbooks to work.
 
-Replace `archives_name = manas_template` with `archives_name = ` followed by your mod id.
-
-Replace `mod_display_name = ManasMods 1.21 Template` with `mod_display_name = ` followed by your mod display name
-
----
-
-Path: `common/src/main/resources`
-
-File: `manas_template.mixins.json`
-
-Rename file to your mod id `.mixins.json`
-
-Change the path of `"package": "com.github.manasmods.template.mixin",` to the path where your mixins are located.
-
-Replace `template` in `"refmap": "template.refmap.json",` with your mod id
-
----
-
-Path: `common/src/main/java/io/github/manasmods`
-
-Rename the Folder `template` to your mod id
-
----
-
-Path: `common/src/main/java/io/github/manasmods/<your mod id>`
-
-File: `Template.java`
-
-Rename `Template.java` to your main class name
-
-Replace `template` in `public static final String MOD_ID = "manas_template"; //TODO replace template with your mod id` with your mod id and remove the "TODO" comment behind the `;`
-
----
-
-Path: `common/src/main/resources`
-
-File: `manas_template.accesswidener`
-
-Rename file to your mod id `.accesswidener`
-
----
-
-Path: `common/src/main/resources`
-
-File: `architectury.common.json`
-
-Replace `manas_template` in `"accessWidener": "manas_template.accesswidener"` with your mod id
-
----
-
-Path: `fabric/src/main/java/io/github/manasmods`
-
-Rename the Folder `template` to your mod id
-
----
-
-Path: `fabric/src/main/resources`
-
-File: `fabric.mod.json`
-
-Replace Template mod id with the id of your Mod on line 3
-
-Replace Template name with the name of your Mod on line 5
-
-Provide a description of your Mod on line 6
-
-Provide a path for the icon of your Mod on line 15
-
-Provide proper paths for the entry points of your Mod on line 17-24
-
----
-
-Path: `neoforge/src/main/java/io/github/manasmods`
-
-Rename the Folder `template` to your mod id
-
----
-
-Path: `neoforge/src/main/resources/META-INF`
-
-File: `neoforge.mods.toml`
-
-Replace Template mod id with the id of your Mod on line 7
-
-Replace Template display name with the name of your Mod on line 9
-
-Provide a description of your Mod on line 11
-
----
+# Features
+- Default EP and Abilities (Skills/Magics/Battlewills) for Iron's Spell & Spellbooks mobs.
+- Default EP for Iron's Spell & Spellbooks gears.
+- Making Iron's Spell & Spellbooks magic consume Tensura's Magicule instead of their mana (Configureable).
+- Making Iron's Spell & Spellbooks magic do more damage to fit in with TR's high-damage abilities (Configureable).
+- Iron's Spell & Spellbooks' Mana regen multiplier is applied for TR's magicule regen.
+- Death King drops Demon Essence.
+- Entity/Item/Block tags for Iron's Spell & Spellbooks' contents.
