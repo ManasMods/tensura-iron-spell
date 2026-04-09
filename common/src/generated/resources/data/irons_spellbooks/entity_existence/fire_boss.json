@@ -1,0 +1,21 @@
+{
+  "type": "irons_spellbooks:fire_boss",
+  "abilities": [
+    "tensura:hellfire",
+    "tensura:fire_breath",
+    "tensura:fire_aspectual",
+    "tensura:fire_lance",
+    "tensura:fire_ball",
+    "tensura:fire_storm",
+    "tensura:flame_attack_resistance",
+    "tensura:abnormal_condition_resistance",
+    "tensura:physical_attack_resistance",
+    "tensura:magic_sense",
+    "tensura:sage"
+  ],
+  "max_aura": 40000,
+  "max_magicule": 160000,
+  "min_aura": 20000,
+  "min_magicule": 140000,
+  "spiritualHealth": 5000
+}

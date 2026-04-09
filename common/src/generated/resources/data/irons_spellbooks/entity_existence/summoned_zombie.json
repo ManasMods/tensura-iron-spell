@@ -1,0 +1,6 @@
+{
+  "type": "irons_spellbooks:summoned_zombie",
+  "max_magicule": 2500,
+  "min_magicule": 1400,
+  "spiritualHealth": 80
+}

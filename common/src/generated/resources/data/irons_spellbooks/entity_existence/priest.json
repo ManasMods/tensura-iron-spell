@@ -1,0 +1,16 @@
+{
+  "type": "irons_spellbooks:priest",
+  "abilities": [
+    "tensura:light_attack_resistance",
+    "tensura:light",
+    "tensura:healing",
+    "tensura:healthcare",
+    "tensura:wind_gust",
+    "tensura:protection"
+  ],
+  "max_aura": 4000,
+  "max_magicule": 12000,
+  "min_aura": 2000,
+  "min_magicule": 8000,
+  "spiritualHealth": 400
+}

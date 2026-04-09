@@ -1,0 +1,12 @@
+{
+  "type": "irons_spellbooks:cultist",
+  "abilities": [
+    "tensura:darkness_attack_resistance",
+    "tensura:darkness"
+  ],
+  "max_aura": 2000,
+  "max_magicule": 13000,
+  "min_aura": 2000,
+  "min_magicule": 10000,
+  "spiritualHealth": 500
+}

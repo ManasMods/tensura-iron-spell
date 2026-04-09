@@ -1,0 +1,14 @@
+{
+  "type": "irons_spellbooks:cryomancer",
+  "abilities": [
+    "tensura:cold_resistance",
+    "tensura:freeze",
+    "tensura:icicle_lance",
+    "tensura:ice_wall"
+  ],
+  "max_aura": 4000,
+  "max_magicule": 12000,
+  "min_aura": 2000,
+  "min_magicule": 8000,
+  "spiritualHealth": 400
+}

@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "io.github.manasmods.tensura_iron.neoforge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "MixinAbnormalConditionNullification",
+    "MixinAbstractSpell",
+    "MixinColdNullification",
+    "MixinColdResistance",
+    "MixinEvasionEffect",
+    "MixinManaBarOverlay",
+    "MixinPortalEntity",
+    "MixinTensuraDamageHelper",
+    "MixinThermalFluctuationNullification",
+    "MixinThermalFluctuationResistance"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

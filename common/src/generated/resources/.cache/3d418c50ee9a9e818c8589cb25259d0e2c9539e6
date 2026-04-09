@@ -1,0 +1,6 @@
+// 1.21.1	2026-04-09T04:39:29.8758357	Tags for minecraft:item mod id tensura_iron_spells
+2093aa4922328222ea312418fd24c6a69722e643 data/tensura/tags/item/ability/no_decraft.json
+52459968c257dae05e8e3b3eee34414fed68ae9e data/tensura/tags/item/dubious/ingredient_crystal.json
+7e90c72b9e7e959164f1c79cbfd9cf46a6fcddc5 data/tensura/tags/item/dubious/ingredient_effect.json
+5a23caf8a8e4eb2846fe2bbfeb8eb81aade9fbff data/tensura/tags/item/dubious/ingredient_magic.json
+b1f2ca6daa19bfecc86b0d107cf7633a2f2497c6 data/tensura/tags/item/dubious/ingredient_raw.json

@@ -1,0 +1,8 @@
+{
+  "type": "irons_spellbooks:magehunter_vindicator",
+  "max_aura": 6000,
+  "max_magicule": 2000,
+  "min_aura": 5000,
+  "min_magicule": 1000,
+  "spiritualHealth": 300
+}

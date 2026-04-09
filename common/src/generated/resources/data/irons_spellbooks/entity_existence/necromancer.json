@@ -1,0 +1,16 @@
+{
+  "type": "irons_spellbooks:necromancer",
+  "abilities": [
+    "tensura:darkness_attack_resistance",
+    "tensura:darkness",
+    "tensura:create_lesser_undead",
+    "tensura:icicle_lance",
+    "tensura:fire_aspectual",
+    "tensura:summon_hound_dog"
+  ],
+  "max_aura": 20000,
+  "max_magicule": 12000,
+  "min_aura": 10000,
+  "min_magicule": 10000,
+  "spiritualHealth": 500
+}

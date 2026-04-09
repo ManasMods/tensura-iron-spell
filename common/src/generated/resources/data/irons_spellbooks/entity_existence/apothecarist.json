@@ -1,0 +1,13 @@
+{
+  "type": "irons_spellbooks:apothecarist",
+  "abilities": [
+    "tensura:poison_resistance",
+    "tensura:acid_shell",
+    "tensura:protection"
+  ],
+  "max_aura": 2000,
+  "max_magicule": 10000,
+  "min_aura": 1000,
+  "min_magicule": 9000,
+  "spiritualHealth": 500
+}

@@ -1,0 +1,22 @@
+{
+  "type": "irons_spellbooks:dead_king",
+  "abilities": [
+    "tensura:darkness",
+    "tensura:true_darkness",
+    "tensura:acid_shell",
+    "tensura:poison_resistance",
+    "tensura:darkness_attack_resistance",
+    "tensura:abnormal_condition_resistance",
+    "tensura:physical_attack_resistance",
+    "tensura:magic_sense",
+    "tensura:sage",
+    "tensura:blood_mist",
+    "tensura:self_regeneration",
+    "tensura:self_regeneration"
+  ],
+  "max_aura": 40000,
+  "max_magicule": 120000,
+  "min_aura": 20000,
+  "min_magicule": 80000,
+  "spiritualHealth": 5000
+}

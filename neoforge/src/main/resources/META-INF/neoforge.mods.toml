@@ -35,4 +35,7 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[mixins]]
-config = "tensura_iron.mixins.json"
+config = "tensura_iron_spells.mixins.json"
+
+[[mixins]]
+config = "tensura-iron-forge.mixins.json"

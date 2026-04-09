@@ -1,0 +1,14 @@
+{
+  "type": "irons_spellbooks:pyromancer",
+  "abilities": [
+    "tensura:flame_attack_resistance",
+    "tensura:fire_aspectual",
+    "tensura:fire_ball",
+    "tensura:fire_storm"
+  ],
+  "max_aura": 4000,
+  "max_magicule": 12000,
+  "min_aura": 2000,
+  "min_magicule": 8000,
+  "spiritualHealth": 400
+}

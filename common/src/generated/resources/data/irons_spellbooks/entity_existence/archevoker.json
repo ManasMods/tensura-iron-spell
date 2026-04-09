@@ -1,0 +1,14 @@
+{
+  "type": "irons_spellbooks:archevoker",
+  "abilities": [
+    "tensura:sage",
+    "tensura:invisible",
+    "tensura:magic_wall",
+    "tensura:fire_aspectual"
+  ],
+  "max_aura": 2000,
+  "max_magicule": 10000,
+  "min_aura": 1000,
+  "min_magicule": 9000,
+  "spiritualHealth": 500
+}

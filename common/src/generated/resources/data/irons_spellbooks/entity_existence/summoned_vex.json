@@ -1,0 +1,6 @@
+{
+  "type": "irons_spellbooks:summoned_vex",
+  "max_magicule": 3000,
+  "min_magicule": 1900,
+  "spiritualHealth": 100
+}

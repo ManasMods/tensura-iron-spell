@@ -1,0 +1,18 @@
+{
+  "values": [
+    "irons_spellbooks:blood_upgrade_orb",
+    "irons_spellbooks:cooldown_upgrade_orb",
+    "irons_spellbooks:ender_upgrade_orb",
+    "irons_spellbooks:evocation_upgrade_orb",
+    "irons_spellbooks:fire_upgrade_orb",
+    "irons_spellbooks:holy_upgrade_orb",
+    "irons_spellbooks:ice_upgrade_orb",
+    "irons_spellbooks:lightning_upgrade_orb",
+    "irons_spellbooks:mana_upgrade_orb",
+    "irons_spellbooks:nature_upgrade_orb",
+    "irons_spellbooks:protection_upgrade_orb",
+    "irons_spellbooks:upgrade_orb",
+    "irons_spellbooks:shriving_stone",
+    "irons_spellbooks:energized_core"
+  ]
+}

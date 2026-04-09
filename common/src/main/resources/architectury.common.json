@@ -2,5 +2,5 @@
   "injected_interfaces": {
 
   },
-  "accessWidener": "tensura_iron.accesswidener"
+  "accessWidener": "tensura_iron_spells.accesswidener"
 }
