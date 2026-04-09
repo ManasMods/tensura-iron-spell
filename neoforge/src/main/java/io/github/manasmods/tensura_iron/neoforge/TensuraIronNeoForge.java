@@ -23,6 +23,7 @@ public final class TensuraIronNeoForge {
     public TensuraIronNeoForge(IEventBus bus) {
         TensuraIron.init();
         ConfigRegistry.registerConfig(new IronConfig());
+        IronHandler.init();
         bus.addListener(this::gatherData);
     }
 

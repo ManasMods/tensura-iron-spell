@@ -4,6 +4,7 @@ import io.github.manasmods.tensura.data.TensuraEntityTags;
 import io.github.manasmods.tensura.registry.entity.HumanEntityTypes;
 import io.github.manasmods.tensura.registry.entity.MonsterEntityTypes;
 import io.github.manasmods.tensura_iron.TensuraIron;
+import io.github.manasmods.tensura_iron.data.IronEntityTags;
 import io.redspace.ironsspellbooks.registries.EntityRegistry;
 import io.redspace.ironsspellbooks.util.ModTags;
 import net.minecraft.core.HolderLookup;
@@ -23,15 +24,6 @@ public class IronEntityTypeTagProvider extends EntityTypeTagsProvider {
 	}
 
 	protected void addTags(@NotNull HolderLookup.Provider provider) {
-        tag(TensuraEntityTags.NON_LIVING).add(EntityRegistry.CURSED_ARMOR_STAND.get());
-		tag(TensuraEntityTags.EP_INITIATE_EXCLUDED).add(EntityRegistry.CURSED_ARMOR_STAND.get());
-		tag(TensuraEntityTags.NO_ENERGY_DRAIN).add(EntityRegistry.CURSED_ARMOR_STAND.get());
-		tag(TensuraEntityTags.NO_EP_PLUNDER).add(EntityRegistry.CURSED_ARMOR_STAND.get());
-		tag(TensuraEntityTags.NO_SKILL_PLUNDER).add(EntityRegistry.CURSED_ARMOR_STAND.get());
-		tag(TensuraEntityTags.NO_SPIRITUAL_DAMAGE).add(EntityRegistry.CURSED_ARMOR_STAND.get());
-		tag(TensuraEntityTags.CAN_DIE_IN_LABYRINTH).add(EntityRegistry.CURSED_ARMOR_STAND.get());
-        tag(TensuraEntityTags.HINATA_NEUTRAL).add(EntityRegistry.CURSED_ARMOR_STAND.get());
-
         tag(TensuraEntityTags.HUMAN_LIKE).add(EntityRegistry.ARCHEVOKER.get(), EntityRegistry.CRYOMANCER.get(),
                 EntityRegistry.MAGEHUNTER_VINDICATOR.get(), EntityRegistry.PRIEST.get(), EntityRegistry.PYROMANCER.get());
         tag(TensuraEntityTags.DROP_CRYSTAL).add(EntityRegistry.CATACOMBS_ZOMBIE.get(), EntityRegistry.KEEPER.get(),
@@ -55,6 +47,8 @@ public class IronEntityTypeTagProvider extends EntityTypeTagsProvider {
         tag(TensuraEntityTags.CAN_EVAPORATE).add(EntityRegistry.ICE_BLOCK_PROJECTILE.get());
         tag(TensuraEntityTags.CAN_DISTINGUISH).add(EntityRegistry.FIREBOLT_PROJECTILE.get(), EntityRegistry.FIRE_BOMB.get());
 
+        tag(IronEntityTags.IMMUNE_TO_SPELL_BOOST).add(EntityRegistry.DEAD_KING.get(), EntityRegistry.FIRE_BOSS.get(),
+                EntityRegistry.KEEPER.get(), EntityRegistry.CURSED_ARMOR_STAND.get());
         tag(ModTags.CANT_USE_PORTAL).add(MonsterEntityTypes.CHARYBDIS.get(), MonsterEntityTypes.AKASH.get(),
                 MonsterEntityTypes.IFRIT.get(), MonsterEntityTypes.SYLPHIDE.get(), MonsterEntityTypes.UNDINE.get(), MonsterEntityTypes.WAR_GNOME.get(),
                 MonsterEntityTypes.ORC_LORD.get(), MonsterEntityTypes.ORC_DISASTER.get(), 

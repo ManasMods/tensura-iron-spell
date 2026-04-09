@@ -8,6 +8,7 @@ import io.github.manasmods.tensura.storage.TensuraStorages;
 import io.github.manasmods.tensura.storage.ep.ExistenceStorage;
 import io.github.manasmods.tensura.util.EnergyHelper;
 import io.github.manasmods.tensura_iron.TensuraIron;
+import io.github.manasmods.tensura_iron.data.IronEntityTags;
 import io.redspace.ironsspellbooks.api.events.SpellDamageEvent;
 import io.redspace.ironsspellbooks.api.events.SpellOnCastEvent;
 import io.redspace.ironsspellbooks.api.events.SpellPreCastEvent;
@@ -44,6 +45,7 @@ public class NeoEventsHandler {
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void onSpellDamage(final SpellDamageEvent event) {
+        if (event.getEntity().getType().is(IronEntityTags.IMMUNE_TO_SPELL_BOOST)) return;
         IronConfig config = ConfigRegistry.getConfig(IronConfig.class);
         if (config == null) return;
         double boost = config.spellDamageMultiplier;
