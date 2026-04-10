@@ -7,9 +7,10 @@
 This Mod doesn't provide any new functionality for Minecraft itself. It requires TenSura: Reincarnated and Iron's Spells & Spellbooks to work.
 
 # Features
-- Default EP and Abilities (Skills/Magics/Battlewills) for Iron's Spell & Spellbooks mobs.
-- Default EP for Iron's Spell & Spellbooks gears.
 - Making Iron's Spell & Spellbooks magic consume Tensura's Magicule instead of their mana (Default: x50, Configureable).
 - Making Iron's Spell & Spellbooks magic do more damage to fit in with TR's high-damage abilities (Default: x10, Configureable).
+- Making Iron's Spell & Spellbooks mana regeneration and cast time reduction apply on TR's features.
+- Default EP and Abilities (Skills/Magics/Battlewills) for Iron's Spell & Spellbooks mobs.
+- Default EP and Stat Evolutions for Iron's Spell & Spellbooks gears.
 - Death King drops Demon Essence, Tyros drops Elemental Essense and Flame Shard.
 - Entity/Item/Block tags for Iron's Spell & Spellbooks' contents.
