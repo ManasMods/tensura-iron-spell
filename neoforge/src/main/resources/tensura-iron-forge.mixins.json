@@ -11,6 +11,8 @@
     "MixinColdNullification",
     "MixinColdResistance",
     "MixinEvasionEffect",
+    "MixinExistenceStorage",
+    "MixinMagicUtils",
     "MixinManaBarOverlay",
     "MixinPortalEntity",
     "MixinTensuraDamageHelper",
