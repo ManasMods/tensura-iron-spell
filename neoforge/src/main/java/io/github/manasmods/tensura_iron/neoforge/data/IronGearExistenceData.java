@@ -4,6 +4,7 @@ import io.github.manasmods.tensura.data.existence.gear.GearExistenceData;
 import io.github.manasmods.tensura.data.existence.gear.UniqueGearEvolutionHelper;
 import io.github.manasmods.tensura.registry.data.TensuraCustomData;
 import io.redspace.ironsspellbooks.registries.ItemRegistry;
+import net.hazen.hazennstuff.Registries.HnSItemRegistry;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 
@@ -126,6 +127,12 @@ public class IronGearExistenceData {
         register(context, GearExistenceData.getDefault(ItemRegistry.BOOTS_OF_SPEED.getId(), 15000, 0.02, UniqueGearEvolutionHelper.getLowMagisteelArmors()));
         register(context, GearExistenceData.getDefault(ItemRegistry.INFERNAL_SORCERER_CHESTPLATE.getId(), 20000, 0.03, UniqueGearEvolutionHelper.getLowMagisteelArmors()));
         register(context, GearExistenceData.getDefault(ItemRegistry.TARNISHED_CROWN.getId(), 20000, 0.03, UniqueGearEvolutionHelper.getHighMagisteelArmors()));
+        
+        // Herta Puppet Set
+        register(context, GearExistenceData.getDefault(HnSItemRegistry.HERTA_PUPPET_HELMET.getId(), 5000, 0.02, UniqueGearEvolutionHelper.getLowMagisteelArmors()));
+        register(context, GearExistenceData.getDefault(HnSItemRegistry.HERTA_PUPPET_CHESTPLATE.getId(), 5000, 0.02, UniqueGearEvolutionHelper.getLowMagisteelArmors()));
+        register(context, GearExistenceData.getDefault(HnSItemRegistry.HERTA_PUPPET_LEGGINGS.getId(), 5000, 0.02, UniqueGearEvolutionHelper.getLowMagisteelArmors()));
+        register(context, GearExistenceData.getDefault(HnSItemRegistry.HERTA_PUPPET_BOOTS.getId(), 5000, 0.02, UniqueGearEvolutionHelper.getLowMagisteelArmors()));
     }
 
     public static void register(BootstrapContext<GearExistenceData> context, GearExistenceData data) {
